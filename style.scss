@@ -1,0 +1,442 @@
+@import 'reset';
+
+// ***** Variables *****
+
+// *** Colors ***
+$pink: hsl(322, 100%, 66%);
+$lt-cyan: hsl(193, 100%, 96%);
+$dk-cyan: hsl(192, 100%, 9%);
+$gray-blue: hsl(208, 11%, 55%);
+
+
+html {
+ font-size: 62.5%;
+}
+
+// ***** Utilities *****
+.btn {
+ text-decoration: none;
+ border: none;
+ border-radius: 3rem;
+ font-size: 1rem;
+ font-weight: 700;
+ display: block;
+ cursor: pointer;
+ box-shadow: 0 2px 4px 2px hsl(208, 11%, 90%);
+}
+
+.btn-xl {
+ background-color: $pink;
+ color: #fff;
+ width: 60%;
+ padding: 1em 4em;
+
+ &:hover, &:active {
+ opacity: 0.9;
+ box-shadow: none;
+ }
+}
+
+h1, h2 {
+ font-family: 'Poppins', sans;
+ color: $dk-cyan;
+ text-align: center;
+}
+
+.cards, .cta-card {
+ border-radius: 1rem;
+ box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+// ***** Body & Container *****
+
+body {
+ font-size: 1.8rem;
+ font-family: 'Open Sans', sans-serif;
+ display: grid;
+ place-content: center;
+}
+
+.container {
+ height: 100%;
+ max-width: 375px;
+}
+
+// ***** Wrapper & Header *****
+
+.header {
+ display: flex;
+ flex-flow: row nowrap;
+ align-items: center;
+ justify-content: space-between;
+ padding: 2.5rem 1.5rem 0 1.5rem;
+ margin-bottom: 6rem;
+
+ .logo > img {
+ width: 6em;
+ height: auto;
+ }
+
+ .btn-header {
+ padding: 0.3em 1.5em;
+ background-color: #fff;
+ }
+
+ .btn-header:hover,
+ .btn-header:active {
+ box-shadow: none;
+ color: $dk-cyan;
+ }
+}
+
+// TODO: style the bg
+.wrapper {
+ background: url(/images/bg-hero-mobile.svg) $lt-cyan;
+ background-size: contain;
+ background-position: center;
+ background-repeat: no-repeat;
+}
+
+
+// ***** Hero Section *****
+
+.hero-wrapper {
+ display: flex;
+ flex-direction: column;
+ text-align: center;
+ gap: 3rem;
+ padding: 0 2rem;
+}
+
+.hero-content {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: space-around;
+ gap: 2rem;
+}
+
+.hero-img {
+ max-width: 80%;
+ height: auto;
+ align-self: center;
+ padding-bottom: 2rem;
+}
+
+
+// ***** Cards Section *****
+
+.cards-wrapper {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ gap: 3rem;
+ padding: 5rem .1rem;
+}
+
+.cards {
+ display: flex;
+ flex-direction: column-reverse;
+ align-items: center;
+ text-align: center;
+
+ gap: 5rem;
+ max-width: 95%;
+ padding: 4.4rem 3rem;
+
+
+ .card-img {
+ display: block;
+ max-width: 80%;
+ margin: 0 auto;
+ height: auto;
+ }
+
+ .card-content {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ gap: 1rem;
+
+ .card-title {
+ font-size: 1.7rem;
+ font-weight: 600;
+ }
+
+ .card-text {
+ font-size: 1.3rem;
+ color: $gray-blue;
+ padding: 0 2.5rem;
+}
+}
+}
+
+// ***** CTA Card *****
+
+.cta-card {
+ display: flex;
+ width: 95%;
+ background-color: #fff;
+ flex-direction: column;
+ align-items: center;
+ text-align: center;
+ gap: 1rem;
+ justify-content: center;
+ padding: 3.5rem 1rem;
+ position: absolute;
+ top: 0;
+ left: 50%;
+ transform: translate(-50%, -60%);
+
+ .cta {
+ font-size: 1.5rem;
+ }
+
+ .btn-cta {
+ margin-top: 1rem;
+ }
+}
+
+// ***** Footer *****
+footer {
+ margin-top: 13rem;
+ background-color: $dk-cyan;
+ position: relative;
+}
+
+.footer-wrapper {
+ padding: 13rem 2rem 4rem;
+}
+
+ .logo-footer {
+ margin-bottom: 4.5rem;
+
+ img {
+ max-width: 45%;
+ filter: brightness(0) invert(1);
+}
+ }
+
+.location-text, a[href^="mailto"], a[href^="tel"] {
+ text-decoration: none;
+ font-style: normal;
+ font-size: 1.7rem;
+ color: #fff;
+ height: fit-content;
+ display: flex;
+ gap: 1.3rem;
+}
+
+.location-text::before {
+ content: url(/images/icon-location.svg);
+ padding-top: 5px;
+}
+
+a[href^="tel"]::before {
+ content: url(/images/icon-phone.svg);
+ padding-top: 2px;
+}
+
+a[href^="mailto"]::before {
+ content: url(/images/icon-email.svg);
+ padding-top: 2px;
+}
+
+.footer-nav {
+ margin: 2rem 0 6rem 0;
+
+ ul {
+ list-style: none;
+
+ li {
+ margin-left: -4rem;
+ }
+
+ li:not(:nth-child(6)) {
+ margin-bottom: 1rem;
+ }
+
+ li a {
+ text-decoration: none;
+ color: #fff;
+
+ &:hover {
+ text-decoration: underline;
+ }
+ }
+ }
+}
+
+
+
+.social-media {
+margin-bottom: 3rem;
+
+ ul {
+ list-style: none;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ margin-left: -2rem;
+
+ li {
+ margin-right: 1rem;
+ }
+
+ li a{
+ display: block;
+ width: 3rem;
+ height: 3rem;
+ color: #fff;
+ border: 1px solid #fff;
+ border-radius: 50%;
+ text-align: center;
+
+ &:hover {
+ color: $pink;
+ border-color: $pink;
+ }
+ }
+
+ .fab {
+ font-size: 1.4rem;
+ }
+}
+}
+
+.copyright, .attribution {
+ font-size: 1.1rem;
+ text-align: center;
+ color: #fff;
+}
+
+.attribution {
+ margin-top: 3rem;
+ margin-bottom: -3rem;
+}
+
+
+// ***** Media Queries *****
+
+@media screen and (min-width: 900px) {
+
+ .container {
+ max-width: 1440px;
+ }
+
+ .header {
+ padding: 4rem;
+ }
+
+ .wrapper {
+ background: url(/images/bg-hero-desktop.svg) $lt-cyan;
+ }
+
+ .hero-wrapper {
+ flex-direction: row;
+ }
+
+ .hero-content {
+ align-items: flex-start;
+ justify-content: center;
+ flex: 50%;
+
+ .hero-heading {
+ font-size: clamp(2rem, 2.9vw, 5rem);
+ text-align: left;
+ line-height: 1.2;
+ }
+
+ .hero-text {
+ font-size: clamp(1rem, 4.5vw, 1.7rem);
+ text-align: left;
+ }
+
+ .hero-img {
+ flex: 50%;
+ max-width: 60%;
+ }
+ }
+
+ .btn-xl {
+ padding: 1em 2em;
+ width: 50%;
+ }
+
+ .cta-card {
+ width: 40%;
+ .btn-cta {
+ padding: 1em 2em;
+ max-width: 50%;
+ }
+ }
+
+ .cards {
+ flex-direction: row;
+ text-align: left;
+
+ &:nth-of-type(even) {
+ flex-direction: row-reverse;
+ }
+
+ .card-content {
+ align-items: flex-start;
+ justify-content: flex-start;
+
+ .card-title {
+ font-size: clamp(1.7rem, 2vw, 2.5rem);
+ }
+
+ .card-text {
+ padding: unset;
+ font-size: clamp(1.3rem, 1.7vw, 1.7rem);
+ max-width: 64ch;
+ }
+ }
+ }
+
+ .footer-wrapper {
+ display: flex;
+ align-items: center;
+ justify-content: space-evenly;
+ }
+
+ .location-text {
+ max-width: 40ch;
+ }
+
+ .footer-nav {
+
+ margin: unset;
+
+ ul {
+ column-count: 2;
+ column-gap: 8rem;
+
+ li {
+ margin-left: unset;
+ }
+ }
+}
+
+.social-copy {
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+
+ .copy {
+ margin-top: 5rem;
+ margin-bottom: -5rem;
+ }
+
+ .copyright, .attribution {
+ text-align: right;
+ }
+
+ .attribution {
+ margin-top: 1rem;
+ margin-bottom: unset;
+ }
+}
+}
