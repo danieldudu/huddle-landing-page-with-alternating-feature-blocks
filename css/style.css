@@ -84,7 +84,7 @@ html {
   text-decoration: none;
   border: none;
   border-radius: 3rem;
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-weight: 700;
   display: block;
   cursor: pointer;
@@ -95,8 +95,8 @@ html {
 .btn-xl {
   background-color: #ff52bf;
   color: #fff;
-  width: 60%;
-  padding: 1em 4em;
+  width: 70%;
+  padding: 1rem 4rem;
 }
 
 .btn-xl:hover, .btn-xl:active {
@@ -299,16 +299,17 @@ body {
   position: absolute;
   top: 0;
   left: 50%;
-  -webkit-transform: translate(-50%, -40%);
-          transform: translate(-50%, -40%);
+  -webkit-transform: translate(-50%, -45%);
+          transform: translate(-50%, -45%);
 }
 
 .cta-card .cta {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 .cta-card .btn-cta {
   margin-top: 1rem;
+  padding: 1rem 4rem;
 }
 
 footer {
@@ -452,6 +453,8 @@ a[href^="mailto"]::before {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    line-height: 1.7;
+    padding: 0 5rem;
   }
   .hero-content {
     -webkit-box-align: start;
@@ -460,13 +463,13 @@ a[href^="mailto"]::before {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    padding-top: 6rem;
+    padding-top: 12rem;
     -webkit-box-flex: 50%;
         -ms-flex: 50%;
             flex: 50%;
   }
   .hero-content .hero-heading {
-    font-size: clamp(2rem, 2.9vw, 5rem);
+    font-size: clamp(2rem, 2.7vw, 4.5rem);
     text-align: left;
     line-height: 1.2;
   }
@@ -481,14 +484,14 @@ a[href^="mailto"]::before {
     max-width: 60%;
   }
   .btn-xl {
-    padding: 1em 2em;
-    width: 50%;
+    padding: 2rem 5rem;
+    max-width: 50%;
   }
   .cta-card {
     width: 40%;
   }
   .cta-card .btn-cta {
-    padding: 1em 2em;
+    padding: 2rem 5rem;
     max-width: 50%;
   }
   .cards {
@@ -496,7 +499,9 @@ a[href^="mailto"]::before {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    gap: 1rem;
     text-align: left;
+    padding: 0 6rem;
   }
   .cards:nth-of-type(even) {
     -webkit-box-orient: horizontal;
