@@ -89,7 +89,6 @@ body {
  }
 }
 
-// TODO: style the bg
 .wrapper {
  background: url(/images/bg-hero-mobile.svg) $lt-cyan;
  background-size: contain;
@@ -339,7 +338,8 @@ margin-bottom: 3rem;
 
  .hero-content {
  align-items: flex-start;
- justify-content: center;
+ justify-content: flex-start;
+ padding-top: 6rem;
  flex: 50%;
 
  .hero-heading {

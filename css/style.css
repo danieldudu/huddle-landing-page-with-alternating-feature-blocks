@@ -457,9 +457,10 @@ a[href^="mailto"]::before {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding-top: 6rem;
     -webkit-box-flex: 50%;
         -ms-flex: 50%;
             flex: 50%;
