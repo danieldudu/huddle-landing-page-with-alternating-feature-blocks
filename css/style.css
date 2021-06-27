@@ -149,12 +149,12 @@ body {
 }
 
 .header .logo > img {
-  width: 6em;
+  width: 10em;
   height: auto;
 }
 
 .header .btn-header {
-  padding: 0.3em 1.5em;
+  padding: 1em 3.5em;
   background-color: #fff;
 }
 
@@ -267,7 +267,7 @@ body {
 }
 
 .cards .card-content .card-title {
-  font-size: 1.7rem;
+  font-size: 2rem;
   font-weight: 600;
 }
 
@@ -304,7 +304,7 @@ body {
 }
 
 .cta-card .cta {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
 }
 
 .cta-card .btn-cta {
