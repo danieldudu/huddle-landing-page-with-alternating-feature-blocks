@@ -149,13 +149,25 @@ body {
 }
 
 .header .logo > img {
-  width: 10em;
+  width: 12rem;
   height: auto;
 }
 
+@media screen and (max-width: 300px) {
+  .header .logo > img {
+    width: 8rem;
+  }
+}
+
 .header .btn-header {
-  padding: 1em 3.5em;
+  padding: 1rem 2.5rem;
   background-color: #fff;
+}
+
+@media screen and (max-width: 300px) {
+  .header .btn-header {
+    padding: 0.5rem 1rem;
+  }
 }
 
 .header .btn-header:hover,
