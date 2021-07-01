@@ -92,6 +92,12 @@ html {
           box-shadow: 0 2px 4px 2px #e3e6e8;
 }
 
+@media screen and (max-width: 350px) {
+  .btn {
+    font-size: 1rem;
+  }
+}
+
 .btn-xl {
   background-color: #ff52bf;
   color: #fff;
